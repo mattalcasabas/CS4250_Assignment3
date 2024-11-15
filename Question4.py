@@ -27,3 +27,5 @@ print(bs.find_all(string=(re.compile('HTML'))))
 print(bs.body.table.tr.next_sibling.next_sibling)
 # g. [3 points]. All <img> tags from the table. Use the HTML tags to do this search.
 print(bs.find_all("img"))
+
+print(bs.find_all("a"))
