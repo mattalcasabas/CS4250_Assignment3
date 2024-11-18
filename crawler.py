@@ -71,7 +71,7 @@ def store_page(url, html):
         "url": url,
         "html": html
     }
-    db.collection.insert_one(document)
+    db.pages.insert_one(document)
 
 def parse(html):
     bs = BeautifulSoup(html, 'html.parser')
